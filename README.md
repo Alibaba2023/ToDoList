@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <h3><b>TO-DO-LIST</b></h3>
+  <h3><b>ToDoList</b></h3>
 
 </div>
 
@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[TO-DO-LIST\] ](#-TO-DO-LIST-)
+- [📖 \[ToDoList\] ](#-ToDoList-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [TO-DO-LIST] <a name="about-project"></a>
+# 📖 [ToDoList] <a name="about-project"></a>
 
-**[TO-DO-LIST]** is a javaScript project that allow users to add and remove tasks.
+**[ToDoList]** is a javaScript project that allow users to add and remove tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,7 +75,7 @@
 
 **To get a local copy up and running, follow these steps.**
 
-1. Download or clone this [repostory](git@github.com:Alibaba2023/To-Do-List.git).
+1. Download or clone this [repostory](git@github.com:Alibaba2023/ToDoList.git).
 2. Provide a browser.
 3. Open the `index.html` file using webpage browser.
 
@@ -111,18 +111,18 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 
 ### Setup
 
-- Clone this [repository](git@github.com:Alibaba2023/To-Do-List.git) to your desired folder:
+- Clone this [repository](git@github.com:Alibaba2023/ToDoList.git) to your desired folder:
 
 - Example commands:
 
 ```sh
   cd [YOUR FOLDER]
-  git clone git@github.com:Alibaba2023/To-Do-List.git
+  git clone git@github.com:Alibaba2023/ToDoList.git
 ```
 
 ### Install
 
-- Install this project by cloning or downloading the master branch of this [repository](git@github.com:Alibaba2023/To-Do-List.git) and run `index.html` file on the root of repository.
+- Install this project by cloning or downloading the master branch of this [repository](git@github.com:Alibaba2023/ToDoList.git) and run `index.html` file on the root of repository.
 
 ### Usage
 
@@ -130,7 +130,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 
 ```sh
  cd [YOUR FOLDER]
- git clone git@github.com:Alibaba2023/To-Do-List.git
+ git clone git@github.com:Alibaba2023/ToDoList.git
 ```
 
 ### Run tests
@@ -186,7 +186,7 @@ npx eslint .
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](git@github.com:Alibaba2023/To-Do-List.git/issues).
+Feel free to check the [issues page](git@github.com:Alibaba2023/ToDoList.git/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,7 +194,7 @@ Feel free to check the [issues page](git@github.com:Alibaba2023/To-Do-List.git/i
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, kindly drop a start for the [repository](git@github.com:Alibaba2023/To-Do-List.git);
+If you like this project, kindly drop a start for the [repository](git@github.com:Alibaba2023/ToDoList.git);
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
