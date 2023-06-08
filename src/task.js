@@ -96,6 +96,7 @@ class Task {
       });
       cancelEdit.addEventListener('click', () => {
         editItem.classList.add('display-none');
+        this.displayTask();
       });
       saveEdit.addEventListener('click', (event) => {
         event.preventDefault();
