@@ -1,20 +1,24 @@
 class Task {
+  // initializing the localstorage and add eventlistener to addBtn
   constructor() {
     this.allTask = JSON.parse(localStorage.getItem('data')) || [];
     this.addBtn = document.querySelector('.add-btn');
     this.addBtn.addEventListener('click', this.addTask.bind(this));
   }
 
+  // function for saving the data to localStorage
   saveData() {
     localStorage.setItem('data', JSON.stringify(this.allTask));
   }
 
+  // function for reindexing the Tasks
   reindex() {
     this.allTask.forEach((element, index = 1) => {
       element.index = index;
     });
   }
 
+  // function for deleting the Tasks
   removeTask(index) {
     this.allTask.splice(index, 1);
     this.saveData();
@@ -22,11 +26,12 @@ class Task {
     this.reindex();
   }
 
+  // function for both displaying and editing
   displayTask() {
     const taskList = document.querySelector('.to-do-list');
     taskList.innerHTML = '';
+    // displaying Tasks
     this.allTask.forEach((element, addindex) => {
-      // create an item for the list
       const item = document.createElement('li');
       item.className = 'item-element';
 
@@ -57,7 +62,7 @@ class Task {
         this.saveData();
         this.reindex();
       });
-
+      // adding edit popup
       const editItem = document.createElement('li');
       editItem.className = 'edit-div';
       editItem.classList.add('display-none');
@@ -107,6 +112,7 @@ class Task {
     });
   }
 
+  // function for adding Tasks to "allTask" array of object
   addTask() {
     const inputAdd = document.querySelector('.input-add');
     if (inputAdd.value) {
