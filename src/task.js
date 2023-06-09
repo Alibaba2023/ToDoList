@@ -57,8 +57,9 @@ class Task {
       taskComplete.checked = element.completed;
 
       taskComplete.addEventListener('change', () => {
-        element.completed = true;
+        element.completed = taskComplete.checked;
         this.saveData();
+        this.displayTask();
       });
 
       const taskText = document.createElement('p');
