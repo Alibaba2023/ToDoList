@@ -88,6 +88,7 @@
 
 .edit-input {
   padding: 0 8px;
+  font-size: 18px;
 }
 
 li form {
@@ -123,6 +124,7 @@ li form {
 .all-completed {
   display: inline-block;
   font-size: 24px;
+  cursor: pointer;
   color: #222;
   width: 300px;
   background-color: #fff;
