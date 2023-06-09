@@ -26,6 +26,22 @@ class Task {
     this.reindex();
   }
 
+  // function for adding Tasks to "allTask" array of object
+  addTask() {
+    const inputAdd = document.querySelector('.input-add');
+    if (inputAdd.value) {
+      const newTask = {
+        description: inputAdd.value,
+        completed: false,
+        index: this.allTask.length,
+      };
+      this.allTask.push(newTask);
+      inputAdd.value = '';
+      this.saveData();
+      this.displayTask();
+    }
+  }
+
   // function for both displaying and editing
   displayTask() {
     const taskList = document.querySelector('.to-do-list');
@@ -37,7 +53,14 @@ class Task {
 
       const taskComplete = document.createElement('input');
       taskComplete.type = 'checkbox';
+      taskComplete.className = 'is-completed';
       taskComplete.checked = element.completed;
+
+      taskComplete.addEventListener('change', () => {
+        element.completed = taskComplete.checked;
+        this.saveData();
+        this.displayTask();
+      });
 
       const taskText = document.createElement('p');
       taskText.textContent = element.description;
@@ -110,23 +133,15 @@ class Task {
           editDescription.reportValidity();
         }
       });
+      // function for clearing all completed task
+      const allCompletedBtn = document.querySelector('.all-completed');
+      allCompletedBtn.addEventListener('click', () => {
+        this.allTask = this.allTask.filter((el) => !el.completed);
+        this.reindex();
+        this.saveData();
+        this.displayTask();
+      });
     });
-  }
-
-  // function for adding Tasks to "allTask" array of object
-  addTask() {
-    const inputAdd = document.querySelector('.input-add');
-    if (inputAdd.value) {
-      const newTask = {
-        description: inputAdd.value,
-        completed: false,
-        index: this.allTask.length,
-      };
-      this.allTask.push(newTask);
-      inputAdd.value = '';
-      this.saveData();
-      this.displayTask();
-    }
   }
 }
 export default Task;
