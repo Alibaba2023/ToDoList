@@ -48,26 +48,8 @@
   border-radius: 5px;
 }
 
-.item-element {
-  display: grid;
-  grid-template-columns: 20px auto 20px 20px;
-  background-color: #fff;
-  font-size: 18px;
-  column-gap: 10px;
-  margin-bottom: 10px;
-  padding: 8px;
-  border-radius: 5px;
-}
-
 .icon-item {
   font-size: 24px;
-}
-
-.clear-completeds {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
 }
 
 .edit-div {
@@ -88,6 +70,38 @@
 
 .edit-input {
   padding: 0 8px;
+  font-size: 18px;
+}
+
+.all-completed {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  color: #222;
+  width: 300px;
+  background-color: #fff;
+  text-decoration: underline;
+  padding: 24px 48px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px #2222225e;
+}
+
+.item-element {
+  display: grid;
+  grid-template-columns: 20px auto 20px 20px;
+  background-color: #fff;
+  font-size: 18px;
+  column-gap: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.clear-completeds {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 li form {
@@ -118,18 +132,6 @@ li form {
   border: none;
   background-color: red;
   border-radius: 5px;
-}
-
-.all-completed {
-  display: inline-block;
-  font-size: 24px;
-  color: #222;
-  width: 300px;
-  background-color: #fff;
-  text-decoration: underline;
-  padding: 24px 48px;
-  border-radius: 30px;
-  box-shadow: 0 0 30px #2222225e;
 }
 
 @media screen and (max-width: 440px) {
