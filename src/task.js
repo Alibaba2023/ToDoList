@@ -115,8 +115,10 @@ class Task {
 
       editIcon.addEventListener('click', () => {
         editItem.classList.remove('display-none');
+        editDescription.focus();
         this.saveData();
       });
+
       cancelEdit.addEventListener('click', () => {
         editItem.classList.add('display-none');
         this.displayTask();
